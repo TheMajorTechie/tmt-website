@@ -1,0 +1,121 @@
+body {
+  background-image: linear-gradient(45deg, #2e2e2e 4.55%, #000000 4.55%, #000000 50%, #2e2e2e 50%, #2e2e2e 54.55%, #000000 54.55%, #000000 100%);
+  background-size: 15.56px 15.56px;
+}
+#outer {
+  width: 100%;
+}
+#inner {
+  margin: 0 auto;
+}
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+.headers {
+  text-align:center;
+  color:grey;
+  font-size: calc(25px + 2.5vw);
+  margin-bottom: 2px;
+  margin-top: 2px;
+  display: inline-block;
+}
+.thumbnails {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.stories {
+ display: block;
+ /*use this to control visibility of "Fimfiction Stories" section in next site update.*/
+}
+.story-container {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+}
+.story-container img {
+  border: 2px solid grey;
+}
+.story-container a { 
+  position: relative; display: inline-block 
+}
+a .story-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  background: black;
+  color: #fff;
+  opacity: 0;
+  transition: opacity .5s;
+  overflow: scroll;
+  font-size: calc(5px + .75vw);
+  padding: 10px;
+  border: solid grey;
+  border-radius: 10px;
+}
+a .story-block:hover {
+  opacity: 50;
+}
+.story-buttons {
+ position: relative;
+ font-size: calc(7px + .75vw);
+ margin-top: 5px;
+ padding: 5px;
+ color: white;
+ background-color: grey;
+ border: none;
+ border-radius: 10px;
+ transition: background-color .25s;
+}
+.story-buttons:hover {
+ background-color: #4a4a4a;
+ cursor: pointer;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+.footer {
+  position: fixed;
+  bottom: 0px;
+  font-size: 7px;
+  background-color: black;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+  color: white;
+}
+.footer-2 {
+  bottom: 0px;
+  font-size: 7px;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+  color: white;
+}
+#hide-footer {
+  position: fixed;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3d3d3d;
+  color: white;
+  padding: 12px 8px;
+  border: none;
+  border-radius: 5px;
+  bottom: 5px;
+  right: 5px;
+}
+#patreon-button {
+ position: relative;
+ margin-top: 5px;
+}
+#patreon-button:hover {
+ cursor: pointer;
+}
