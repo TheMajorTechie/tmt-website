@@ -85,6 +85,21 @@ body {
  background-color: #4a4a4a;
  cursor: pointer;
 }
+.story-buttons-fimfic {
+ position: relative;
+ font-size: calc(5px + .5vw);
+ margin-top: 5px;
+ padding: 5px;
+ color: white;
+ background-color: brown;
+ border: none;
+ border-radius: 10px;
+ transition: background-color .25s;
+}
+.story-buttons-fimfic:hover {
+  background-color: #7d3000;
+  cursor: pointer;
+}
 /*.carousel-cell #ponyme {
   height: 250px;
 }*/
