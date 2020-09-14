@@ -39,6 +39,7 @@ body {
 }
 .stories {
  display: block;
+  position: relative;
  /*use this to control visibility of "Fimfiction Stories" section in next site update.*/
 }
 .story-container {
