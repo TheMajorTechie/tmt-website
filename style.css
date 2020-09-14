@@ -115,7 +115,7 @@ body {
 }
 
 .footer-2 {
-  position: fixed;
+  position: absolute;
   bottom: 0px;
   font-size: 7px;
   width: 100%;
