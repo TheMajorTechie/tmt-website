@@ -1,4 +1,4 @@
-# tmt-website
+# stories.tmt-website
 
 Just my personal website. It ain't much, but it does the job.
 
