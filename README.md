@@ -1,3 +1,3 @@
-# test.tmt-website
+# stories.tmt-website
 
-Test stories refactor.
+Soon to be the new home of the site stories. DO NOT MERGE.
