@@ -36,6 +36,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 75%;
+  max-height: 450px;
 }
 .stories {
  display: block;
@@ -61,6 +62,7 @@ body {
   transition: opacity .5s;*/
   font-size: calc(5px + .75vw);
   overflow: scroll;
+  height: 450px;
 }
 
 .story-block::-webkit-scrollbar {
