@@ -36,7 +36,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
-  width: auto;
+  max-width: auto;
+  max-height: 250px;
 }
 .stories {
  display: block;
