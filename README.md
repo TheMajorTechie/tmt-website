@@ -1,3 +1,3 @@
-# stories.tmt-website
+# Museum.tmt-website
 
-Soon to be the new home of the site stories. DO NOT MERGE.
+Soon to be the new home of the tech museum.
