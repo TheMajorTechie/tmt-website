@@ -35,7 +35,9 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 75%;
+  margin-top: 5px;
+  max-width: 100%;
+  max-height: 250px;
 }
 .stories {
  display: block;
@@ -46,7 +48,7 @@ body {
   text-align: center;
   position: relative;
   margin: 5px;
-  height: auto;
+  height: 275px;
 }
 .story-container img {
   border: 2px solid grey;
@@ -55,12 +57,14 @@ body {
   position: relative; display: inline-block 
 }
 .story-block {
-  margin: 5px;
+  margin: 10px;
+  margin-top: 25px;
   color: #fff;
   /*opacity: 0;
   transition: opacity .5s;*/
   font-size: calc(5px + .75vw);
   overflow: scroll;
+  height: 275px;
 }
 
 .story-block::-webkit-scrollbar {
