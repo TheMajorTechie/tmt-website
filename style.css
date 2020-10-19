@@ -46,7 +46,7 @@ body {
   text-align: center;
   position: relative;
   margin: 5px;
-  height: auto;
+  height: 450px;
 }
 .story-container img {
   border: 2px solid grey;
