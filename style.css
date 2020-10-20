@@ -47,7 +47,7 @@ body {
 }
 .card-container {
 	position: relative;
-	width: 100%;
+	width: 50%;
 }
 .overlay {
 		position: absolute;
@@ -59,7 +59,6 @@ body {
 		transition: .25s ease;
 		background-color: black;
 		text-align: center;
-		height: 50%;
 }
 .card-container:hover .overlay {
 	opacity: 1;
