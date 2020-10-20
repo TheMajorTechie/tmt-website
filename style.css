@@ -48,9 +48,6 @@ body {
 .card-container {
 	position: relative;
 }
-.card-container-image {
-	display: block;
-}
 .overlay {
 		position: absolute;
 		width: 100%;
