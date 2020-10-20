@@ -47,7 +47,7 @@ body {
 }
 .text-container {
   text-align: center;
-  position: relative;
+  position: absolute;
   margin-top: 20px;
   margin-bottom: 20px;
   max-width: 25%;
