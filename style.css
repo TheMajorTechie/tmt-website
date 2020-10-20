@@ -59,7 +59,7 @@ body {
 		transition: .25s ease;
 		background-color: black;
 		text-align: center;
-		width: 50%;
+		height: 50%;
 }
 .card-container:hover .overlay {
 	opacity: 1;
