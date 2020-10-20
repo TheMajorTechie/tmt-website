@@ -45,6 +45,28 @@ body {
  background-color: #4a4a4a;
  cursor: pointer;
 }
+.text-container {
+  text-align: center;
+  position: relative;
+  margin: 5px;
+  height: 250px;
+}
+.text-container img {
+  border: 2px solid grey;
+}
+.text-container a { 
+  position: relative; display: inline-block 
+}
+.text-block {
+  margin: 10px;
+  margin-top: 25px;
+  color: #fff;
+  /*opacity: 0;
+  transition: opacity .5s;*/
+  font-size: calc(5px + .75vw);
+  overflow: scroll;
+  height: 250px;
+}
 .footer {
   position: fixed;
   bottom: 0px;
