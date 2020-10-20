@@ -45,24 +45,19 @@ body {
   margin-top: 5px;
   max-width: 75%;
 }
-.stories {
- display: block;
-  position: relative;
- /*use this to control visibility of "Fimfiction Stories" section in next site update.*/
-}
-.story-container {
+.text-container {
   text-align: center;
   position: relative;
   margin: 5px;
   height: 250px;
 }
-.story-container img {
+.text-container img {
   border: 2px solid grey;
 }
-.story-container a { 
+.text-container a { 
   position: relative; display: inline-block 
 }
-.story-block {
+.text-block {
   margin: 10px;
   margin-top: 25px;
   color: #fff;
@@ -73,7 +68,7 @@ body {
   height: 250px;
 }
 
-.story-block::-webkit-scrollbar {
+.text-block::-webkit-scrollbar {
   width: 0px;
   background: transparent;
 }
@@ -81,7 +76,7 @@ body {
 /*.story-block:hover {
   opacity: 50;
 }*/
-.story-buttons {
+.buttons {
  position: relative;
  font-size: calc(5px + .5vw);
  margin-top: 5px;
@@ -92,24 +87,9 @@ body {
  border-radius: 10px;
  transition: background-color .25s;
 }
-.story-buttons:hover {
+.buttons:hover {
  background-color: #4a4a4a;
  cursor: pointer;
-}
-.story-buttons-fimfic {
- position: relative;
- font-size: calc(5px + .5vw);
- margin-top: 5px;
- padding: 5px;
- color: white;
- background-color: brown;
- border: none;
- border-radius: 10px;
- transition: background-color .25s;
-}
-.story-buttons-fimfic:hover {
-  background-color: #7d3000;
-  cursor: pointer;
 }
 /*.carousel-cell #ponyme {
   height: 250px;
