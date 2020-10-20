@@ -85,7 +85,7 @@ a .text-block:hover {
 }
 .text-container {
   text-align: center;
-  position: relative;
+  position: absolute;
   margin: 5px;
   height: 250px;
 }
