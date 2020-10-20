@@ -79,6 +79,10 @@ a .text-block {
 a .text-block:hover {
   opacity: 50;
 }
+.text-block::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
 .text-container {
   text-align: center;
   position: relative;
