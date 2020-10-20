@@ -2,15 +2,6 @@ body {
   background-image: linear-gradient(45deg, #2e2e2e 4.55%, #000000 4.55%, #000000 50%, #2e2e2e 50%, #2e2e2e 54.55%, #000000 54.55%, #000000 100%);
   background-size: 15.56px 15.56px;
 }
-.main-carousel {
- width: 75%;
- margin-left: auto;
- margin-right: auto;
- height: auto;
- background: black;
- border: solid grey 2px;
- border-radius: 15px;
-}
 #outer {
   width: 100%;
 }
@@ -36,46 +27,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
-  max-width: 90%;
+  max-width: 100%;
+  max-height: 250px;
 }
-.thumbnails-large {
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  max-width: 75%;
-}
-.text-container {
-  text-align: center;
-  position: relative;
-  margin: 5px;
-  height: 250px;
-}
-.text-container img {
-  border: 2px solid grey;
-}
-.text-container a { 
-  position: relative; display: inline-block 
-}
-.text-block {
-  margin: 10px;
-  margin-top: 25px;
-  color: #fff;
-  /*opacity: 0;
-  transition: opacity .5s;*/
-  font-size: calc(5px + .75vw);
-  overflow: scroll;
-  height: 250px;
-}
-
-.text-block::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-}
-
-/*.story-block:hover {
-  opacity: 50;
-}*/
 .buttons {
  position: relative;
  font-size: calc(5px + .5vw);
@@ -91,9 +45,6 @@ body {
  background-color: #4a4a4a;
  cursor: pointer;
 }
-/*.carousel-cell #ponyme {
-  height: 250px;
-}*/
 .footer {
   position: fixed;
   bottom: 0px;
@@ -104,7 +55,6 @@ body {
   right: 0px;
   color: white;
 }
-
 .footer-2 {
   position: relative;
   margin-top: 100px;
