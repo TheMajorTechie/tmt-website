@@ -68,9 +68,11 @@ body {
 	 font-size: calc(7px + .75vw);
 	position: absolute;
 	top: 50%;
+	left: 50%;
 	text-align: center;
 	height: auto;
 	max-height: 500px;
+	max-width: 50%;
 	border: 1px grey;
 	border-radius: 10px;
 }
