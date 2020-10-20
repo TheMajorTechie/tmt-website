@@ -88,6 +88,9 @@ a .text-block:hover {
   position: relative;
   display: table;
 }
+tr {
+	height: 250px;
+}
 td {
 	text-align: center;
 	padding: 15px;
