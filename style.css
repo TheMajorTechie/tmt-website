@@ -86,6 +86,7 @@ a .text-block:hover {
 .text-container {
   text-align: center;
   position: relative;
+  display: table;
 }
 .footer {
   position: fixed;
