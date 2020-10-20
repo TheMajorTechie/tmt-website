@@ -71,6 +71,8 @@ body {
 	text-align: center;
 	height: auto;
 	max-height: 500px;
+	border: 1px grey;
+	border-radius: 10px;
 }
 tr {
 	height: 500px;
