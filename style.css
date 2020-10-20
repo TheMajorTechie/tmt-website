@@ -80,7 +80,7 @@ body {
 	border-radius: 10px;
 }
 tr {
-	height: 500px;
+	max-height: 500px;
 }
 td {
 	text-align: center;
