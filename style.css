@@ -88,6 +88,13 @@ a .text-block:hover {
   position: relative;
   display: table;
 }
+table {
+	width: 75%;
+}
+td {
+	text-align: center;
+	padding: 15px;
+}
 .footer {
   position: fixed;
   bottom: 0px;
