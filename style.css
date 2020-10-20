@@ -46,9 +46,10 @@ body {
  cursor: pointer;
 }
 .card-container {
+	position: relative;
+}
+.card-container-image {
 	display: block;
-	width: 100%;
-	height: auto;
 }
 .overlay {
 		position: absolute;
@@ -57,6 +58,15 @@ body {
 		opacity: 0;
 		transition: .25s ease;
 		background-color: black;
+}
+.card-container:hover .overlay {
+	opacity: 1;
+}
+.card-container-text {
+	font-size: calc(7px + .75vw);
+ margin-top: 5px;
+ padding: 5px;
+ color: white;
 }
 tr {
 	height: 500px;
