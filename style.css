@@ -49,6 +49,8 @@ body {
   text-align: center;
   position: relative;
   margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 75%;
 }
 .text-container img {
   border: 2px solid grey;
