@@ -60,7 +60,7 @@ body {
   display: inline-block; 
 }
 a .text-block {
-
+  position: absolute;
   background: black;
   color: #fff;
   opacity: 0;
