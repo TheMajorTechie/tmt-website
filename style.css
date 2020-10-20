@@ -56,7 +56,8 @@ body {
   border: 2px solid grey;
 }
 .text-container a { 
-  position: relative; display: inline-block 
+  position: relative; 
+   
 }
 a .text-block {
   position: absolute;
