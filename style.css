@@ -60,6 +60,7 @@ body {
 		opacity: 0;
 		transition: .25s ease;
 		background-color: black;
+		text-align: center;
 }
 .card-container:hover .overlay {
 	opacity: 1;
