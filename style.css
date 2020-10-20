@@ -64,15 +64,19 @@ body {
 	opacity: 1;
 }
 .card-container-text {
-	color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
+	 color: white;
+	 font-size: calc(7px + .75vw);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
+	text-align: center;
+	height: auto;
+	max-height: 500px;
+	border: 10px grey;
+	border-radius: 10px;
 }
 tr {
 	height: 500px;
