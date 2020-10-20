@@ -72,6 +72,7 @@ a .text-block {
   padding: 10px;
   border: solid grey;
   border-radius: 10px;
+  width: 100%;
 }
 a .text-block:hover {
   opacity: 50;
