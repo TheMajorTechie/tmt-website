@@ -48,8 +48,7 @@ body {
 .text-container {
   text-align: center;
   position: relative;
-  margin: 5px;
-  height: 250px;
+  margin-top: 20px;
 }
 .text-container img {
   border: 2px solid grey;
@@ -57,14 +56,30 @@ body {
 .text-container a { 
   position: relative; display: inline-block 
 }
-.text-block {
-  margin: 10px;
-  margin-top: 25px;
+a .text-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  background: black;
   color: #fff;
-  /*opacity: 0;
-  transition: opacity .5s;*/
-  font-size: calc(5px + .75vw);
+  opacity: 0;
+  transition: opacity .5s;
   overflow: scroll;
+  font-size: calc(5px + .75vw);
+  padding: 10px;
+  border: solid grey;
+  border-radius: 10px;
+}
+a .text-block:hover {
+  opacity: 50;
+}
+.text-container {
+  text-align: center;
+  position: relative;
+  margin: 5px;
   height: 250px;
 }
 .footer {
