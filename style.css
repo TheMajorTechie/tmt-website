@@ -48,7 +48,7 @@ body {
 .card-container {
 	position: relative;
 	width: 50%;
-	left: 50%;
+	left: 25%;
 }
 .overlay {
 		position: absolute;
