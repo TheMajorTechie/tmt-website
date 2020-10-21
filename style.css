@@ -30,7 +30,7 @@ body {
   transition: .25s opacity;
 }
 .thumbnails:hover {
-	text-shadow: 0 0 3px blue;
+	box-shadow: 0 0 3px blue;
 }
 .buttons {
  position: relative;
