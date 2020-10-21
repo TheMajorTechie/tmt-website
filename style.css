@@ -36,6 +36,7 @@ h2 .headers {
   margin-top: 5px;
   transition: .25s;
   border: 15px solid black;
+  display: block;
 }
 .thumbnails:hover {
 	border: 2px solid grey;
