@@ -23,14 +23,13 @@ body {
   display: inline-block;
 }
 .thumbnails {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
   transition: .25s opacity;
 }
 .thumbnails:hover {
-	box-shadow: 0 0 3px blue;
+	border: 10px solid grey;
 }
 .buttons {
  position: relative;
