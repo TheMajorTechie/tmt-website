@@ -65,6 +65,8 @@ body {
 }
 .card-container:hover .overlay {
 	opacity: 1;
+	border: 2px solid grey;
+	border-radius: 10px;
 }
 .card-container-text {
 	 color: white;
@@ -78,8 +80,6 @@ body {
 	text-align: center;
 	height: auto;
 	max-height: 500px;
-	border: 10px solid grey;
-	border-radius: 10px;
 }
 tr {
 	max-height: 500px;
