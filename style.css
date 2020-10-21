@@ -27,7 +27,7 @@ body {
   margin-right: auto;
   margin-top: 5px;
   transition: .25s;
-  border: 10px solid black;
+  border: 15px solid black;
 }
 .thumbnails:hover {
 	border: 2px solid grey;
