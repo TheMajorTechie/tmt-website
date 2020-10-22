@@ -156,7 +156,7 @@ td {
   z-index: 1;
 }
 
-.tooltip .tooltiptext::after {
+/*.tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
   top: 100%;  
@@ -166,7 +166,7 @@ td {
   border-style: solid;
   border-color: transparent transparent black transparent;
   transition: .25s opacity;
-}
+}*/
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
