@@ -142,11 +142,20 @@ td {
 }
 
 .tooltip .tooltiptext {
+  visibility: hidden;
   width: 120px;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    bottom: 100%;
+	  left: 50%;
+	  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
 }
+
 .tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
