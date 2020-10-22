@@ -154,7 +154,7 @@ td {
 
   position: absolute;
   z-index: 1;
-  transition: .25s opacity;
+  transition: .25s visibility;
 }
 
 
