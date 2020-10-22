@@ -1,3 +1,3 @@
 # Museum.tmt-website
 
-Soon to be the new home of the tech museum.
+The tech museum of themajortechie.com
