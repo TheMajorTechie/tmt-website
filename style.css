@@ -162,6 +162,7 @@ td {
   border-width: 5px;
   border-style: solid;
   border-color: transparent transparent black transparent;
+  transition: opacity .25s;
 }
 
 .tooltip:hover .tooltiptext {
