@@ -141,7 +141,7 @@ td {
   border-bottom: 1px dotted black;
 }
 
-/*.tooltip .tooltiptext {
+.tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
   background-color: black;
@@ -152,7 +152,7 @@ td {
 
   position: absolute;
   z-index: 1;
-}*/
+}
 .tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
@@ -162,7 +162,7 @@ td {
   border-width: 5px;
   border-style: solid;
   border-color: transparent transparent black transparent;
-  transition: opacity .25s;
+  transition: .25s opacity;
 }
 
 .tooltip:hover .tooltiptext {
