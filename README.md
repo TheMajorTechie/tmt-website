@@ -1,3 +1,3 @@
-# stories.tmt-website
+# tmt-website
 
-Soon to be the new home of the site stories. DO NOT MERGE.
+The website of the one and only Tonkman of the techie realm! This is my personal website, where I post stories, tech stuff, and probably maybe other stuff too!
