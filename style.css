@@ -78,6 +78,11 @@ body {
 	width: 50%;
 	left: 25%;
 }
+.card-container-noChip {
+	position: relative;
+	width: 50%;
+	left: 25%;
+}
 .overlay {
 	position: absolute;
 	top: 0;
@@ -92,6 +97,11 @@ body {
 .card-container:hover .overlay {
 	opacity: 1;
 	border: 2px solid grey;
+	border-radius: 10px;
+}
+.card-container-noChip:hover .overlay {
+	opacity: 1;
+	border: 2px solid red;
 	border-radius: 10px;
 }
 .card-container-text {
