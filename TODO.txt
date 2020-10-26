@@ -1,0 +1,5 @@
+create placeholder tiles for past CPU generations leading up to today to save some headache in the future
+
+if placeholder tiles end up getting description pages, add a new style outlining method for tiles to mark what is actually in the collection and what isn't
+
+dynamic tile placement?
