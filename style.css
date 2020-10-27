@@ -8,6 +8,9 @@ body {
 #inner {
   margin: 0 auto;
 }
+img {
+	loading: lazy;
+}
 .centered {
   display: block;
   margin-left: auto;
