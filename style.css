@@ -1,11 +1,11 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Main body elements~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 body {
-  background-image: linear-gradient(45deg, #2e2e2e 4.55%, #000000 4.55%, #000000 50%, #2e2e2e 50%, #2e2e2e 54.55%, #000000 54.55%, #000000 100%);
-  background-size: 15.56px 15.56px;
+  background-color: black;
 }
-#outer {
+.outer {
   width: 100%;
 }
-#inner {
+.inner {
   margin: 0 auto;
 }
 img {
@@ -17,35 +17,15 @@ img {
   margin-right: auto;
   width: 75%;
 }
-.headers {
-  text-align:center;
-  color:#d1d1d1;
-  font-size: calc(25px + 2.5vw);
-  margin-bottom: 2px;
-  margin-top: 2px;
-  display: inline-block;
+p {
+	font-family: Arial, Helvetica, sans-serif;
 }
-.headers-2 {
-	text-align:center;
-  color:#d1d1d1;
-  font-size: calc(20px + .25vw);
-  margin-bottom: 2px;
-  margin-top: 2px;
-  display: inline-block;
-  font-family: Arial sans-serif;
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
 }
-.thumbnails {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  transition: .25s;
-  border: 15px solid black;
-  display: block;
-  max-width: 75%;
-}
-.thumbnails:hover {
-	border: 2px solid grey;
-}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Buttons~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .buttons {
  position: relative;
  font-size: calc(5px + .5vw);
@@ -76,6 +56,67 @@ img {
  background-color: #283754;
  cursor: pointer;
 }
+
+.item-buttons {
+ position: relative;
+ font-size: calc(5px + .5vw);
+ margin-top: 5px;
+ padding: 5px;
+ color: white;
+ border: solid grey;
+ border-radius: 10px;
+ transition: border .25s;
+  background-position: 10px 10px;
+  text-shadow: 1px 1px black;
+  -webkit-text-stroke: 1px black;
+}
+.item-buttons:hover {
+ border: solid white;
+ cursor: pointer;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Labeling~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.headers {
+  text-align:center;
+  color:#d1d1d1;
+  font-size: calc(25px + 2.5vw);
+  margin-bottom: 2px;
+  margin-top: 2px;
+  display: inline-block;
+}
+.headers-2 {
+	text-align:center;
+  color:#d1d1d1;
+  font-size: calc(20px + .25vw);
+  margin-bottom: 2px;
+  margin-top: 2px;
+  display: inline-block;
+  font-family: Arial sans-serif;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Table entries~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+table {
+	width: 75%;
+}
+tr {
+	max-width: 75%;
+}
+td {
+	text-align: center;
+	background-color: black;
+}
+
+/*Image handling*/
+.thumbnails {
+  transition: .25s;
+  border: 5px solid black;
+  max-width: 75%;
+}
+.thumbnails:hover {
+	border: 5px solid grey;
+}
 .card-container {
 	position: relative;
 	width: 50%;
@@ -85,17 +126,6 @@ img {
 	position: relative;
 	width: 50%;
 	left: 25%;
-}
-.overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	opacity: 0;
-	transition: .25s ease;
-	background-color: black;
-	text-align: center;
 }
 .card-container:hover .overlay {
 	opacity: 1;
@@ -120,14 +150,43 @@ img {
 	height: auto;
 	max-height: 500px;
 }
-tr {
-	max-height: 500px;
-}
-td {
-	text-align: center;
-	padding: 5px;
+/*Image labeling*/
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: .25s ease;
 	background-color: black;
+	text-align: center;
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	top: 100%;
+	left: 50%;
+	margin-left: -60px; 
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+	transition: .25s visibility;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Footer stuff~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .footer {
   position: fixed;
   bottom: 0px;
@@ -148,32 +207,7 @@ td {
   right: 0px;
   color: white;
 }
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-	top: 100%;
-	left: 50%;
-	margin-left: -60px; 
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-
-  position: absolute;
-  z-index: 1;
-  transition: .25s visibility;
-}
-
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
 #hide-footer {
   position: fixed;
   font-size: 16px;
