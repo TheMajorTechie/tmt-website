@@ -112,23 +112,22 @@ td {
 .thumbnails {
   transition: .25s;
   border: 5px solid black;
-  max-width: 75%;
+
 }
 .thumbnails:hover {
 	border: 5px solid grey;
 }
 .card-container {
 	position: relative;
-	width: 50%;
-	left: 25%;
+	display: inline-block;
+	margin: auto;
 }
 .card-container-noChip {
 	position: relative;
-	width: 50%;
-	left: 25%;
+	display: inline-block;
 }
 .card-container:hover .overlay {
-	opacity: 1;
+	opacity: 95%;
 	border: 2px solid grey;
 	border-radius: 10px;
 }
@@ -149,6 +148,7 @@ td {
 	text-align: center;
 	height: auto;
 	max-height: 500px;
+	font-family: Arial sans-serif;
 }
 /*Image labeling*/
 .overlay {
