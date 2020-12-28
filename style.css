@@ -56,7 +56,21 @@ h1 {
  background-color: #283754;
  cursor: pointer;
 }
-
+.buttons-active {
+ position: relative;
+ font-size: calc(5px + .5vw);
+ margin-top: 5px;
+ padding: 5px;
+ color: white;
+ background-color: #007F0E;
+ border: none;
+ border-radius: 10px;
+ transition: background-color .25s;
+}
+.buttons-active:hover {
+ background-color: #005D0E;
+ cursor: pointer;
+}
 .item-buttons {
  position: relative;
  font-size: calc(5px + .5vw);
