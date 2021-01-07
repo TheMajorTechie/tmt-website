@@ -29,7 +29,7 @@ h1 {
 .buttons {
  position: relative;
  font-size: calc(5px + .5vw);
- margin-top: 5px;
+ margin: 5px;
  padding: 5px;
  color: white;
  background-color: grey;
