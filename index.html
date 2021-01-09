@@ -20,9 +20,25 @@
   </head>
  
  <body>
+   <script src="https://www.youtube.com/iframe_api"></script>
+  <script>
+  jQuery(function(){jQuery('#bgvideo iframe').attr('id', 'ytplayer');});
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('ytplayer', {
+      events: {
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
+  function onPlayerStateChange() {
+      player.unMute();
+      player.setVolume(80);
+  }
+  </script>
     <center><div class="vid-div">
                             <div id="vid-blocker"></div>
-                            <iframe id="video-frame" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?&amp;enablejsapi=1&amp;autoplay=1&amp;mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" height="645"></iframe>
+                            <iframe id="video-frame" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?&amp;enablejsapi=1&amp;autoplay=1&amp;mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                         </div></center>
 	<center>Number of people who may have been rickrolled: </center>
 <center><a href="https://www.hitwebcounter.com" target="_blank">
