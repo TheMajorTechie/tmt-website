@@ -66,6 +66,10 @@ body {
   color: white;
 }
 
+#main {
+	visibility: hidden;
+}
+
 #hide-footer {
   position: fixed;
   font-size: 16px;
