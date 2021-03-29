@@ -1,14 +1,16 @@
 span {
-	background-color: gray;
 	text-shadow: 1px 1px black;
 }
 .bg {
+	background-color: gray;
 	color: #FFFCF4;
 }
 .c1 {
+	background-color: gray;
 	color: #00FFA9;
 }
 .c2 {
+	background-color: gray;
 	color: #FF00BB;
 }
 .db {
