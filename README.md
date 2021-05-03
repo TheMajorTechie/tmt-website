@@ -1,3 +1,1 @@
-# Museum.tmt-website
-
-The tech museum of themajortechie.com
+An ongoing visual overhaul that will be eventually implemented across all pages, starting with the master page.
