@@ -29,7 +29,7 @@ h1 {
 .buttons {
  position: relative;
  font-size: calc(5px + .5vw);
- margin-top: 5px;
+ margin: 5px;
  padding: 5px;
  color: white;
  background-color: grey;
@@ -56,7 +56,25 @@ h1 {
  background-color: #283754;
  cursor: pointer;
 }
+<<<<<<< HEAD
+.buttons-active {
+ position: relative;
+ font-size: calc(5px + .5vw);
+ margin-top: 5px;
+ padding: 5px;
+ color: white;
+ background-color: #007F0E;
+ border: none;
+ border-radius: 10px;
+ transition: background-color .25s;
+}
+.buttons-active:hover {
+ background-color: #005D0E;
+ cursor: pointer;
+}
+=======
 
+>>>>>>> museum
 .item-buttons {
  position: relative;
  font-size: calc(5px + .5vw);
@@ -112,23 +130,31 @@ td {
 .thumbnails {
   transition: .25s;
   border: 5px solid black;
+<<<<<<< HEAD
+
+=======
   max-width: 75%;
+>>>>>>> museum
 }
 .thumbnails:hover {
 	border: 5px solid grey;
 }
 .card-container {
 	position: relative;
-	width: 50%;
-	left: 25%;
+	display: inline-block;
+	margin: auto;
 }
 .card-container-noChip {
 	position: relative;
+<<<<<<< HEAD
+	display: inline-block;
+=======
 	width: 50%;
 	left: 25%;
+>>>>>>> museum
 }
 .card-container:hover .overlay {
-	opacity: 1;
+	opacity: 95%;
 	border: 2px solid grey;
 	border-radius: 10px;
 }
@@ -149,6 +175,7 @@ td {
 	text-align: center;
 	height: auto;
 	max-height: 500px;
+	font-family: Arial sans-serif;
 }
 /*Image labeling*/
 .overlay {
@@ -165,6 +192,28 @@ td {
 .tooltip {
   position: relative;
   display: inline-block;
+<<<<<<< HEAD
+}
+.tooltip .tooltiptext {
+	opacity: 0%;
+	display: inline-block;
+	
+	
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border: 2px solid grey;
+	border-radius: 4px;
+	position: relative;
+	z-index: 1;
+	transition: .25s;
+	margin-bottom: 4px;
+	padding: 10px;
+}
+.tooltip:hover .tooltiptext {
+  opacity: 100%;
+}
+=======
   border-bottom: 1px dotted black;
 }
 .tooltip .tooltiptext {
@@ -184,6 +233,7 @@ td {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+>>>>>>> museum
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Footer stuff~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
