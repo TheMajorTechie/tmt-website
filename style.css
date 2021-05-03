@@ -56,6 +56,7 @@ h1 {
  background-color: #283754;
  cursor: pointer;
 }
+<<<<<<< HEAD
 .buttons-active {
  position: relative;
  font-size: calc(5px + .5vw);
@@ -71,6 +72,9 @@ h1 {
  background-color: #005D0E;
  cursor: pointer;
 }
+=======
+
+>>>>>>> museum
 .item-buttons {
  position: relative;
  font-size: calc(5px + .5vw);
@@ -126,7 +130,11 @@ td {
 .thumbnails {
   transition: .25s;
   border: 5px solid black;
+<<<<<<< HEAD
 
+=======
+  max-width: 75%;
+>>>>>>> museum
 }
 .thumbnails:hover {
 	border: 5px solid grey;
@@ -138,7 +146,12 @@ td {
 }
 .card-container-noChip {
 	position: relative;
+<<<<<<< HEAD
 	display: inline-block;
+=======
+	width: 50%;
+	left: 25%;
+>>>>>>> museum
 }
 .card-container:hover .overlay {
 	opacity: 95%;
@@ -179,6 +192,7 @@ td {
 .tooltip {
   position: relative;
   display: inline-block;
+<<<<<<< HEAD
 }
 .tooltip .tooltiptext {
 	opacity: 0%;
@@ -199,6 +213,27 @@ td {
 .tooltip:hover .tooltiptext {
   opacity: 100%;
 }
+=======
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	top: 100%;
+	left: 50%;
+	margin-left: -60px; 
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+	transition: .25s visibility;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+>>>>>>> museum
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Footer stuff~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
