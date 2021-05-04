@@ -1,241 +1,49 @@
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Main body elements~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 body {
-  background-color: black;
-}
-.outer {
-  width: 100%;
-}
-.inner {
-  margin: 0 auto;
-}
-img {
-	loading: lazy;
-}
-.centered {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-}
-p {
-	font-family: Arial, Helvetica, sans-serif;
-}
-h1 {
-	font-family: Arial, Helvetica, sans-serif;
-}
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Buttons~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.buttons {
- position: relative;
- font-size: calc(5px + .5vw);
- margin: 5px;
- padding: 5px;
- color: white;
- background-color: grey;
- border: none;
- border-radius: 10px;
- transition: background-color .25s;
-}
-.buttons:hover {
- background-color: #4a4a4a;
- cursor: pointer;
-}
-.buttons-2 {
- position: relative;
- font-size: calc(5px + .5vw);
- margin-top: 5px;
- padding: 5px;
- color: white;
- background-color: #3e5480;
- border: none;
- border-radius: 10px;
- transition: background-color .25s;
-}
-.buttons-2:hover {
- background-color: #283754;
- cursor: pointer;
-}
-.buttons-active {
- position: relative;
- font-size: calc(5px + .5vw);
- margin-top: 5px;
- padding: 5px;
- color: white;
- background-color: #007F0E;
- border: none;
- border-radius: 10px;
- transition: background-color .25s;
-}
-.buttons-active:hover {
- background-color: #005D0E;
- cursor: pointer;
-}
-.item-buttons {
- position: relative;
- font-size: calc(5px + .5vw);
- margin-top: 5px;
- padding: 5px;
- color: white;
- border: solid grey;
- border-radius: 10px;
- transition: border .25s;
-  background-position: 10px 10px;
-  text-shadow: 1px 1px black;
-  -webkit-text-stroke: 1px black;
-}
-.item-buttons:hover {
- border: solid white;
- cursor: pointer;
-}
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Labeling~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.headers {
-  text-align:center;
-  color:#d1d1d1;
-  font-size: calc(25px + 2.5vw);
-  margin-bottom: 2px;
-  margin-top: 2px;
-  display: inline-block;
-}
-.headers-2 {
-	text-align:center;
-  color:#d1d1d1;
-  font-size: calc(20px + .25vw);
-  margin-bottom: 2px;
-  margin-top: 2px;
-  display: inline-block;
-  font-family: Arial sans-serif;
-}
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Table entries~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-table {
-	width: 75%;
-}
-tr {
-	max-width: 75%;
-}
-td {
-	text-align: center;
-	background-color: black;
+	top: 0px;
+	left: 0px;
+	width: auto;
+	background-color: green;
 }
 
-/*Image handling*/
-.thumbnails {
-  transition: .25s;
-  border: 5px solid black;
+.sidenav {
+	width: 7vh;
+	height: 100%;
+	position: fixed;
+	transition: all .125s;
+	background-color: grey;
+	overflow: visible;
+	z-index: 1000;
+	top: 0px;
+	left: 0px;
+}
 
+.sidenav:hover {
+	width: 20vh;
+	transition: all .125s;
+	background-image: linear-gradient(90deg, blue, transparent);
+	color: white;
 }
-.thumbnails:hover {
-	border: 5px solid grey;
+
+.sidenav-item {
+	width: 100%;
+	display: block;
+	padding: 1vh;
+	transition: all .125s;
+	border-right: 2px;
+	border-radius: 5px;
 }
-.card-container {
+
+.sidenav-item:hover {
+	width: 125%;
+	background-color: blue;
+	transition: all .125s;
+}
+
+.pagebody {
+	width: auto;
+	height: 100%;
 	position: relative;
-	display: inline-block;
-	margin: auto;
-}
-.card-container-noChip {
-	position: relative;
-	display: inline-block;
-}
-.card-container:hover .overlay {
-	opacity: 95%;
-	border: 2px solid grey;
-	border-radius: 10px;
-}
-.card-container-noChip:hover .overlay {
-	opacity: 1;
-	border: 2px solid red;
-	border-radius: 10px;
-}
-.card-container-text {
-	 color: white;
-	 font-size: calc(7px + .75vw);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-	text-align: center;
-	height: auto;
-	max-height: 500px;
-	font-family: Arial sans-serif;
-}
-/*Image labeling*/
-.overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	opacity: 0;
-	transition: .25s ease;
-	background-color: black;
-	text-align: center;
-}
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-.tooltip .tooltiptext {
-	opacity: 0%;
-	display: inline-block;
-	
-	
-	background-color: black;
-	color: #fff;
-	text-align: center;
-	border: 2px solid grey;
-	border-radius: 4px;
-	position: relative;
-	z-index: 1;
-	transition: .25s;
-	margin-bottom: 4px;
-	padding: 10px;
-}
-.tooltip:hover .tooltiptext {
-  opacity: 100%;
-}
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Footer stuff~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.footer {
-  position: fixed;
-  bottom: 0px;
-  font-size: 7px;
-  background-color: black;
-  width: 100%;
-  left: 0px;
-  right: 0px;
-  color: white;
-}
-.footer-2 {
-  position: relative;
-  margin-top: 100px;
-  bottom: 0px;
-  font-size: 7px;
-  width: 100%;
-  left: 0px;
-  right: 0px;
-  color: white;
+	padding-left: 7vh;
+	background-color: yellow;
 }
 
-#hide-footer {
-  position: fixed;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #3d3d3d;
-  color: white;
-  padding: 12px 8px;
-  border: none;
-  border-radius: 5px;
-  bottom: 5px;
-  right: 5px;
-}
-.footer-button {
-  padding: 2px;
-  margin-top: 2px;
-}
