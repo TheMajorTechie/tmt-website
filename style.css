@@ -2,12 +2,27 @@ p {
 	font-size: calc(10px + .5vw);
 	overflow-wrap: break-word;
 	margin: calc(5px + .75vw);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+span {
+	margin-top: 1vw;
+	margin-bottom: 1vw;
 }
 
 body {
 	background-color: green;
 	width: 100%;
 	margin: 0px;
+}
+
+.fab { /*fontawesome styling*/
+	color: white;
 }
 
 .sidenav {
@@ -34,22 +49,80 @@ body {
 	font-size: 2vw;
 	width: 100%;
 	display: block;
-	transition: all .125s;
+	transition: all .25s;
 	border-right: 2px;
 	border-radius: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: white;
+	text-align: center;
 }
 
 .sidenav-item:hover {
+	font-size: 3vw;
 	width: 125%;
 	background-color: blue;
-	transition: all .125s;
+	transition: all .25s;
+	padding: 1vw;
+	box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.1);
+}
+
+.sidenav-item:hover::after {
+    content: attr(name);
+}
+
+.sidenav-link {
+	color: white;
 }
 
 .pagebody {
-	display: block;
 	width: auto;
 	padding-left: 5vw;
 	background-color: purple;
+	height: 100%;
+}
+
+.button-primary {
+	font-size: 2vw;
+	background-color: grey;
+	border: 2px;
+	border-radius: 5px;
+	padding: .25vw;
+	color: white;
+	transition: all .25s;
+	margin: .5vw;
+}
+
+.button-primary:hover {
+	font-size: 2vw;
+	background-color: #4a4a4a;
+	border: 2px;
+	border-radius: 5px;
+	padding: .25vw;
+	color: white;
+	transition: all .25s;
+}
+
+.button-thin {
+	height: 1vh;
+	font-size: 1vw;
+	background-color: grey;
+	border: 2px;
+	border-radius: 5px;
+	padding: .25vw;
+	color: white;
+	transition: all .25s;
+	margin: .5vw;
+}
+
+.button-thin:hover {
+	font-size: 1vw;
+	background-color: #4a4a4a;
+	border: 2px;
+	border-radius: 5px;
+	padding: .25vw;
+	color: white;
+	transition: all .25s;
 }
 
 .header {
