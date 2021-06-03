@@ -42,7 +42,7 @@
 		<center><span><a href="#" class="button-primary"><b>this is a button</b></a></span></center>
 
 		<p>
-		
+		asdfasdf lorem ipsum the quick brown fox jumped over the lazy dog
 		</p>
 		
 		<div class="footer">
@@ -53,8 +53,33 @@
 			</a></center> 
 		</div>
 		
+		<div id="outer">
+		</div>
+		
 	</div>
-    
 	
-  </body>                           
+    
+	<!--javascript to dynamically load data from a .csv file
+	
+	<script>
+function drawLinks() {
+fetch('example.csv')
+.then(response => response.text()) 
+.then(text => {
+    //Split the csv into rows
+    const rows = text.split('\n');
+    for (row of rows) {
+    //Split the row into each of the comma separated values
+var node = document.createElement("a");                 // Create a <li> node
+var textnode = document.createTextNode(row);         // Create a text node
+node.appendChild(textnode);
+document.getElementById("outer").appendChild(node);
+        console.log(row.split(","));
+    }
+});
+}
+window.onload = drawLinks;
+</script>-->
+
+  </body>    
 </html>
