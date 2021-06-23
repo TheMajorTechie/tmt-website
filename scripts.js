@@ -32,3 +32,4 @@ function deleteCookie(name) {
     var expires = "expires=" + d.toGMTString();
     document.cookie = name + "=;" + expires + ";path=/";
 }
+

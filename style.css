@@ -87,6 +87,72 @@
 		background-color: white;
 		height: 100%;
 	}
+	
+	.hoverpic-left {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		transition: all .25s;
+		overflow: hidden;
+	}
+	
+	.hoverpic-left img {
+		width: 75%;
+	}
+	
+	.hoverpic-left:hover {
+		display: flex;
+		padding-right: 40vw;
+		transform: translateX(-40vw);
+	}
+	
+	.hoverpic-left:hover::after {
+		content: "\A" attr(name);
+		font-family: sans-serif;
+		font-size: calc(10vh + .5vw);
+		color: black;
+	}
+	
+	.hoverpic-right {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		transition: all .25s;
+		overflow: hidden;
+	}
+	
+	.hoverpic-right img {
+		width: 75%;
+	}
+	
+	.hoverpic-right:hover {
+		display: flex;
+		padding-left: 15vw;
+		transform: translateX(25vw);
+		
+	}
+	
+	.hoverpic-right:hover::before {
+		content: "\A" attr(name);
+		font-family: sans-serif;
+		font-size: calc(10vh + .5vw);
+		color: black;
+	}
+	
+	.container-left {
+		float: left;
+		width: 50%;
+	}
+	
+	.container-right {
+		float: right;
+		width: 50%;
+	}
+	
+	.main-content {
+		width: auto;
+		height: 100%;
+	}
 
 	.button-primary {
 		font-size: 2vw;
@@ -137,7 +203,7 @@
 		position: relative;
 		width: 75%;
 		height: 10vh;
-		background-color: grey;
+		background-image: linear-gradient(45deg, #2e2e2e 9%, #000000 9%, #000000 25%, #2e2e2e 50%, #2e2e2e 75%, #000000 75%, #000000 100%);
 	}
 	
 	.header h1 {
@@ -147,11 +213,44 @@
 		text-align: center;
 		font-family: Arial, Helvetica, sans-serif;
 		box-shadow: 0px 2px 10px black;
+		color: white;
 	}
 
 	.footer {
 		background-color: black;
 	}
+	
+	.violethover:hover {
+		background-color: violet;
+	}
+	
+	.indigohover:hover {
+		background-color: indigo;
+	}
+	
+	.bluehover:hover {
+		background-color: blue;
+	}
+	
+	.greenhover:hover {
+		background-color: lawngreen;
+	}
+	
+	.yellowhover:hover {
+		background-color: yellow;
+	}
+	
+	.orangehover:hover {
+		background-color: orange;
+	}
+	
+	.redhover:hover {
+		background-color: red;
+	}
+	
+	
+	
+	
 }
 
 
@@ -242,6 +341,33 @@
 		background-color: white;
 		height: 100%;
 	}
+	
+	.hoverpic-left {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		transition: all .25s;
+		overflow: hidden;
+	}
+	
+	.hoverpic-left img {
+		width: 100%;
+	}
+	
+	.container-left {
+		float: left;
+		width: 50%;
+	}
+	
+	.container-right {
+		float: right;
+		width: 50%;
+	}
+	
+	.main-content {
+		width: auto;
+		height: 100%;
+	}
 
 	.button-primary {
 		font-size: 8vw;
@@ -292,7 +418,7 @@
 		position: relative;
 		width: 75%;
 		height: 10vh;
-		background-color: grey;
+		background-image: linear-gradient(45deg, #2e2e2e 9%, #000000 9%, #000000 25%, #2e2e2e 50%, #2e2e2e 75%, #000000 75%, #000000 100%);
 		box-shadow: 0px 2px 10px black;
 	}
 	
@@ -302,11 +428,13 @@
 		line-height: 10vh;
 		text-align: center;
 		font-family: Arial, Helvetica, sans-serif;
+		color: white;
 	}
 
 	.footer {
 		background-color: black;
 	}
+	
 }
 
 
