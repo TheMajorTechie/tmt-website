@@ -135,7 +135,7 @@
 	.hoverpic-right:hover::before {
 		content: "\A" attr(name);
 		font-family: sans-serif;
-		font-size: calc(10vh + .5vw);
+		font-size: 100%;
 		color: black;
 	}
 	
