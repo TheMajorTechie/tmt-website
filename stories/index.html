@@ -13,22 +13,23 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheMajorTechie</title>
+    <title>TheMajorTechie - Stories</title>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
     <script src="/scripts.js"></script>
 	<script src="https://kit.fontawesome.com/a9725178ce.js" crossorigin="anonymous"></script>
     <meta name="description" content="Random content on the internet, made by your local neighborhood Tonk! Support me on Ko-fi to keep this site running!">
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/stories/favicon.png">
+	<script type="text/javascript" src="/json2html-2.1.0/json2html.js"></script>
   </head>
   <!-- Main site code -->
   
   <body>
 		 
 	<div class="sidenav">
-		<img src="/favicon.png" style="width: 100%" Alt="Breadboi is good boi :)">
+		<img src="/favicon.png" style="width: 100%">
 		<a href="/" class="sidenav-link"><span class="sidenav-item" name="home"><i class="fas fa-home"></i></span></a> <!--this returns to the root folder???-->
-		<!--/stories/--><a href="/stories/" class="sidenav-link"><span class="sidenav-item" name="stories"><i class="fas fa-book"></i></span></a>
-		<!--/museum/--><a href="https://museum.themajortechie.com" class="sidenav-link"><span class="sidenav-item" name="museum"><i class="fas fa-landmark"></i></span></a>
+		<a href="/stories/" class="sidenav-link"><span class="sidenav-item" name="stories"><i class="fas fa-book"></i></span></a>
+		<a href="/museum/" class="sidenav-link"><span class="sidenav-item" name="museum"><i class="fas fa-landmark"></i></span></a>
 		<a href="/projects/" class="sidenav-link"><span class="sidenav-item" name="projects"><i class="fas fa-microchip"></i></span></a>
 		<a href="/socials/" class="sidenav-link"><span class="sidenav-item" name="socials"><i class="fas fa-comments"></i><span></a>
 		<hr>
@@ -38,16 +39,13 @@
 
 	<div class="pagebody">
 		<center><div class="header"><h1>Tonkus!</h1></div></center>
-		<center><p>Welcome to the land of the Tonkalonkadingdong! Feel free to check around and explore some pages. :)</p></center>
+		<center><p>These stories link to their respective pages OUTSIDE of the website!</p></center>
 		
-			<div class="main-content">
-				<!--/stories/--><a href="/stories/" Alt="Stories"><center><div class="hoverpic-left yellowhover" name="stories"><img src="/img/storiesbanner.jpg" Alt="Stories"></img></div></center></a>
-				<!--/museum/--><a href="https://museum.themajortechie.com"  Alt="Museum"><center><div class="hoverpic-left greenhover" name="museum"><img src="/img/museumbanner.jpg" Alt="Museum"></img></div></center></a>
-			</div>
+		<div class="main-content" id="main-content">
+			<body onload="javascript:drawLinks()">
+		</div>
 		
-		
-		<div id="outer">
-			<div class="footer">
+		<div class="footer">
 				<center><a href="https://www.hitwebcounter.com" target="_blank">
 					<span style="display: block"><a href="https://github.com/TheMajorTechie/tmt-website" class="button-thin">Visit this website's Github page for more info about site licenses and credits!</a></span>
 					<span style="display: block"> <a href="/socials/youtube/"><i class="fab fa-2x fa-youtube-square"></i></a> <a href="/socials/discord/"><i class="fab fa-2x fa-discord"></i></a> <a href="https://www.patreon.com/themajortechie?fan_landing=true"><i class="fab fa-2x fa-patreon"></i></a> </span>
@@ -56,33 +54,35 @@
 				</a></center> 
 				<a href="https://whatif.themajortechie.com" style="font-size: 1px; text-decoration: none; color: black;">.</a>
 			</div>
+		
+		<div id="outer">
 		</div>
 		
 	</div>
 	
-	
-    
-	<!--javascript to dynamically load data from a .csv file
-	
+	<!--Use json2html api to generate relevant links-->
 	<script>
-function drawLinks() {
-fetch('example.csv')
-.then(response => response.text()) 
-.then(text => {
-    //Split the csv into rows
-    const rows = text.split('\n');
-    for (row of rows) {
-    //Split the row into each of the comma separated values
-var node = document.createElement("a");                 // Create a <li> node
-var textnode = document.createTextNode(row);         // Create a text node
-node.appendChild(textnode);
-document.getElementById("outer").appendChild(node);
-        console.log(row.split(","));
-    }
-});
-}
-window.onload = drawLinks;
-</script>-->
+	
+	function drawLinks() { 
+		let template = {'<>':'a','href':'${link}','Alt':'$(alt}','html':[
+			{'<>':'center','html':[
+				{'<>':'div','class':'${divclasses}','name':'${name}','html':[
+					{'<>':'img','src':'${imglink}','Alt':'${alt}'}
+				]}
+			]}
+		]};
+		
+		let data = [
+			{"link":"splintershard","alt":"Splintershard","divclasses":"hoverpic-left orangehover","name":"Splintershard","imglink":"img/ss.jpg"},
+			{"link":"pony-me","alt":"Pony-Me™","divclasses":"hoverpic-left bluehover","name":"Pony-Me™","imglink":"img/pm.jpg"},
+			{"link":"what-if","alt":"What If...","divclasses":"hoverpic-left yellowhover","name":"What If...","imglink":"img/wi.jpg"}
+		];
+		
+		var links = json2html.render(data,template);
+		document.getElementById("main-content").innerHTML = links;
+	}
+	</script>
+	
 
   </body>    
 </html>

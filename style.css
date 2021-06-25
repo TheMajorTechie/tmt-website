@@ -1,3 +1,8 @@
+.image-header {
+		width: 100%;
+		box-shadow: 0px 1px 5px grey;
+	}
+
 @media (min-width: 720px) {
 	p {
 	font-size: calc(2vh + .5vw);
@@ -116,27 +121,33 @@
 	.hoverpic-left img {
 		width: 75%;
 		box-shadow: 0px 0px 8px 4px rgba(0,0,0,.3);
-		transition: all .25s;
+		transform: scale(.90);
+		transition: transform .75s, filter 1s, box-shadow .5s;
 	}
 	
 	.hoverpic-left:hover {
 		display: flex;
 		padding-right: 40vw;
 		transform: translateX(-40vw);
+		box-shadow: 0px 10px 8px 4px rgba(0,0,0,.5);
 	}
 	
 	.hoverpic-left:hover img {
-		filter: brightness(50%);
+		filter: brightness(75%) saturate(50%);
+		box-shadow: 0px 0px 16px 4px rgba(0,0,0,1);
+		margin-right: 2vw;
+		transform: scale(1);
 	}
 	
 	.hoverpic-left:hover::after {
 		content: "\A" attr(name);
 		font-family: sans-serif;
 		font-size: calc(10vh + .5vw);
-		color: black;
+		white-space: nowrap;
+		text-shadow: 3px 3px grey;
 	}
 	
-	.hoverpic-right {
+	/*.hoverpic-right {
 		width: 100%;
 		display: flex;
 		justify-content: center;
@@ -160,7 +171,7 @@
 		font-family: sans-serif;
 		font-size: 100%;
 		color: black;
-	}
+	}*/
 	
 	.container-left {
 		float: left;
@@ -178,6 +189,14 @@
 		box-shadow: 0px 10px 8px 4px rgba(0,0,0,.3);
 		background-color: gray;
 	}
+	
+	.main-content-text {
+		width: auto;
+		height: 100%;
+		box-shadow: 0px 10px 8px 4px rgba(0,0,0,.3);
+		padding-left: 2vw;
+		padding-right: 2vw;
+	}
 
 	.button-primary {
 		font-size: 2vw;
@@ -188,6 +207,7 @@
 		color: white;
 		transition: all .25s;
 		margin: .5vw;
+		box-shadow: 0px 3px 3px black;
 	}
 
 	.button-primary:hover {
@@ -240,6 +260,18 @@
 		box-shadow: 0px 2px 10px black;
 		color: white;
 	}
+	
+	.content-header {
+		font-size: calc(7vh + .5vw);
+		margin: auto;
+		text-align: center;
+		font-family: Arial, Helvetica, sans-serif;
+		box-shadow: 0px 1px 5px black;
+		margin: 1vw;
+		height: auto;
+		background-color: #ababab;
+		padding: 1vh;
+	}
 
 	.footer {
 		background-color: black;
@@ -247,30 +279,37 @@
 	
 	.violethover:hover {
 		background-color: violet;
+		color: white;
 	}
 	
 	.indigohover:hover {
 		background-color: indigo;
+		color: white;
 	}
 	
 	.bluehover:hover {
 		background-color: blue;
+		color: white;
 	}
 	
 	.greenhover:hover {
 		background-color: lawngreen;
+		color: black;
 	}
 	
 	.yellowhover:hover {
 		background-color: yellow;
+		color: black;
 	}
 	
 	.orangehover:hover {
 		background-color: orange;
+		color: black;
 	}
 	
 	.redhover:hover {
 		background-color: red;
+		color: white;
 	}
 	
 	
@@ -377,6 +416,12 @@
 	
 	.hoverpic-left img {
 		width: 100%;
+		transition: all .25s;
+	}
+	
+	.hoverpic-left:hover img {
+		transform: scale(.9);
+		box-shadow: 0px 0px 8px 4px rgba(0,0,0,.5);
 	}
 	
 	.container-left {
@@ -454,6 +499,18 @@
 		text-align: center;
 		font-family: Arial, Helvetica, sans-serif;
 		color: white;
+	}
+	
+	.content-header {
+		font-size: calc(7vh + .5vw);
+		margin: auto;
+		text-align: center;
+		font-family: Arial, Helvetica, sans-serif;
+		box-shadow: 0px 1px 5px black;
+		margin: 1vw;
+		height: auto;
+		background-color: #ababab;
+		padding: 1vh;
 	}
 
 	.footer {
