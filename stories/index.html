@@ -15,11 +15,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheMajorTechie - Stories</title>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-    <script src="/scripts.js"></script>
 	<script src="https://kit.fontawesome.com/a9725178ce.js" crossorigin="anonymous"></script>
     <meta name="description" content="Random content on the internet, made by your local neighborhood Tonk! Support me on Ko-fi to keep this site running!">
     <link rel="icon" href="/stories/favicon.png">
-	<script type="text/javascript" src="/json2html-2.1.0/json2html.js"></script>
+	<script type="text/javascript" src="/scripts/json2html-2.1.0/json2html.js"></script>
   </head>
   <!-- Main site code -->
   
@@ -38,7 +37,7 @@
 	
 
 	<div class="pagebody">
-		<center><div class="header"><h1>Tonkus!</h1></div></center>
+		<center><div class="header"><h1>Stories</h1></div></center>
 		
 		<div class="main-content" id="main-content">
 			<body onload="javascript:drawLinks()">
@@ -46,17 +45,16 @@
 			<center>Don't see anything? Try the <a href="/stories/basichtml.html">basic html</a> version of this page. The stories are linked using Javascript for ease of modification, so enable Javscript if you can to experience the full site.</center>
 		</div>
 		
-		<div class="footer">
-				<center><a href="https://www.hitwebcounter.com" target="_blank">
+		<div id="outer">
+			<div class="footer">
+				<center>
 					<span style="display: block"><a href="https://github.com/TheMajorTechie/tmt-website" class="button-thin">Visit this website's Github page for more info about site licenses and credits!</a></span>
 					<span style="display: block"> <a href="/socials/youtube/"><i class="fab fa-2x fa-youtube-square"></i></a> <a href="/socials/discord/"><i class="fab fa-2x fa-discord"></i></a> <a href="https://www.patreon.com/themajortechie?fan_landing=true"><i class="fab fa-2x fa-patreon"></i></a> </span>
-					<center><script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Donate', '#29abe0', 'I2I51Z05D');kofiwidget2.draw();</script></center>
+					<span style="display: block"><center><script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Donate', '#29abe0', 'I2I51Z05D');kofiwidget2.draw();</script></center></span>
 					<span style="display: block"><img src="https://hitwebcounter.com/counter/counter.php?page=7658021&style=0007&nbdigits=9&type=ip&initCount=1" title="Total Website Hits" Alt="Web Hits"   border="0" /></span>
 				</a></center> 
 				<a href="https://whatif.themajortechie.com" style="font-size: 1px; text-decoration: none; color: black;">.</a>
 			</div>
-		
-		<div id="outer">
 		</div>
 		
 	</div>
@@ -66,29 +64,20 @@
 	
 	function drawLinks() { 
 		var width = window.innerWidth;
-		let template = {'<>':'a','href':'${link}','Alt':'$(alt}','html':[
+		let template = 
 			{'<>':'center','html':[
-				{'<>':'div','class':'${divclasses}','name':'${name}','html':[
-					{'<>':'img','src':'${imglink}','Alt':'${alt}'}
+				{'<>':'a','href':'${link}','Alt':'$(name}','html':[
+					{'<>':'div','class':'hoverpic-alt','name':'${name}','html':[
+						{'<>':'img','src':'${imglink}','Alt':'${alt}'}
+					]}
 				]}
-			]}
-		]};
+			]};
 
-		let data;
-		if(width > 720) {
 			data = [
-				{"link":"splintershard","alt":"Splintershard","divclasses":"hoverpic-left orangehover","name":"Splintershard","imglink":"img/ss.jpg"},
-				{"link":"pony-me","alt":"Pony-Me™","divclasses":"hoverpic-left bluehover","name":"Pony-Me™","imglink":"img/pm.jpg"},
-				{"link":"what-if","alt":"What If...","divclasses":"hoverpic-left yellowhover","name":"What If...","imglink":"img/wi.jpg"}
+				{"link":"splintershard","name":"Splintershard","imglink":"img/ss.jpg"},
+				{"link":"pony-me","name":"Pony-Me™","imglink":"img/pm.jpg"},
+				{"link":"what-if","name":"What If...","imglink":"img/wi.jpg"}
 			];
-		}
-		else {
-			data = [
-				{"link":"splintershard","alt":"Splintershard","divclasses":"mobileview","name":"Splintershard","imglink":"img/ss.jpg"},
-				{"link":"pony-me","alt":"Pony-Me™","divclasses":"mobileview","name":"Pony-Me™","imglink":"img/pm.jpg"},
-				{"link":"what-if","alt":"What If...","divclasses":"mobileview","name":"What If...","imglink":"img/wi.jpg"}
-			];
-		}
 		
 		var links = json2html.render(data,template);
 		document.getElementById("main-content").innerHTML = links;

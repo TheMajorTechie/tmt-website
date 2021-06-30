@@ -5,7 +5,7 @@
 
 @media (min-width: 720px) {
 	p {
-	font-size: calc(2vw + .5vw);
+	font-size: calc(1vw + .5vw);
 	overflow-wrap: break-word;
 	margin: calc(5px + .75vw);
 	font-family: Arial, Helvetica, sans-serif;
@@ -51,12 +51,12 @@
 		box-shadow: 4px 0px 8px 4px rgba(0,0,0,.1);
 	}
 
-	.sidenav:hover {
+	/*.sidenav:hover {
 		width: 10vw;
 		transition: all .125s;
 		color: white;
 		box-shadow: 4px 0px 8px 4px rgba(0,0,0,.3);
-	}
+	}*/
 	
 	@keyframes bganimation {
 		0% {background-position:0px 50px;}
@@ -83,21 +83,21 @@
 		text-decoration: none;
 		color: white;
 		text-align: center;
+		transition: all .25s;
 	}
 
 	.sidenav-item:hover {
-		font-size: 3vw;
-		width: 150%;
+		/*font-size: 3vw;*/
+		/*width: 150%;*/
 		height: auto;
 		background-image: linear-gradient(90deg, #4a4a4a, grey);
-		transition: all .25s;
-		padding: 1vw;
-		box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.3);
+		/*padding: 1vw;*/
+		box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.3);
 	}
 
-	.sidenav-item:hover::after {
+	/*.sidenav-item:hover::after {
 		content: "\A" attr(name);
-	}
+	}*/
 
 	.sidenav-link {
 		color: white;
@@ -142,9 +142,43 @@
 	.hoverpic-left:hover::after {
 		content: "\A" attr(name);
 		font-family: sans-serif;
-		font-size: calc(10vh + .5vw);
+		font-size: calc(7vw + .5vh);
 		white-space: nowrap;
 		text-shadow: 3px 3px grey;
+	}
+	
+	.hoverpic-alt {
+		position: relative;
+		display: inline-block;
+		margin-left: 12vw;
+		margin-right: 12vw;
+		margin-top: 2vh;
+		margin-bottom: 2vh;
+	}
+	
+	.hoverpic-alt img {
+		width: 100%;
+		box-shadow: 0px 0px 1px 1px rgba(0,0,0,.5);
+		transition: all .25s;
+		box-shadow: 0px 0px 8px 4px rgba(0,0,0,.3);
+	}
+	
+	.hoverpic-alt:hover img {
+		transform: scale(.90);
+		filter: brightness(75%);
+		box-shadow: 0px 0px 16px 8px rgba(0,0,0,.5);
+	}
+	
+	.hoverpic-alt p {
+		position: absolute;
+		margin: 0 auto;
+		top: 0%;
+		text-align: center;
+		width: 100%;
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: calc(9vw + .5vw);
+		-webkit-text-stroke: 2px black;
 	}
 	
 	.mobileview {
@@ -282,38 +316,38 @@
 	}
 	
 	.violethover:hover {
-		background-color: violet;
-		color: white;
+		background-color: #cc99ff;
+		color: black;
 	}
 	
 	.indigohover:hover {
-		background-color: indigo;
-		color: white;
+		background-color: #99ccff;
+		color: black;
 	}
 	
 	.bluehover:hover {
-		background-color: blue;
-		color: white;
+		background-color: #ccffff;
+		color: black;
 	}
 	
 	.greenhover:hover {
-		background-color: lawngreen;
+		background-color: #ccff99;
 		color: black;
 	}
 	
 	.yellowhover:hover {
-		background-color: yellow;
+		background-color: #ffffcc;
 		color: black;
 	}
 	
 	.orangehover:hover {
-		background-color: orange;
+		background-color: #ffcc66;
 		color: black;
 	}
 	
 	.redhover:hover {
-		background-color: red;
-		color: white;
+		background-color: #ff6666;
+		color: black;
 	}
 	
 	
@@ -433,6 +467,35 @@
 		box-shadow: 0px 0px 8px 4px rgba(0,0,0,.5);
 	}
 	
+	.hoverpic-alt {
+		position: relative;
+		display: inline-block;
+	}
+	
+	.hoverpic-alt img {
+		width: 100%;
+		box-shadow: 0px 0px 1px 1px rgba(0,0,0,.5);
+		transition: all .25s;
+	}
+	
+	.hoverpic-alt:hover img {
+		transform: scale(.9);
+		filter: brightness(75%);
+		box-shadow: 0px 0px 8px 4px rgba(0,0,0,.5);
+	}
+	
+	.hoverpic-alt p {
+		position: absolute;
+		margin: 0 auto;
+		top: 0%;
+		text-align: center;
+		width: 100%;
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: calc(9vw + .5vw);
+		-webkit-text-stroke: 2px black;
+	}
+	
 	.mobileview {
 		position: relative;
 		display: inline-block;
@@ -458,7 +521,7 @@
 		width: 100%;
 		color: white;
 		font-family: Arial, Helvetica, sans-serif;
-		font-size: calc(9vw + .5vw);
+		font-size: calc(8vw + .5vw);
 		-webkit-text-stroke: 2px black;
 	}
 	
