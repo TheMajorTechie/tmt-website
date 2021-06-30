@@ -26,7 +26,7 @@
   <body>
 		 
 	<div class="sidenav">
-		<img src="/favicon.png" style="width: 100%">
+		<img src="/stories/favicon.png" style="width: 100%">
 		<a href="/" class="sidenav-link"><span class="sidenav-item" name="home"><i class="fas fa-home"></i></span></a> <!--this returns to the root folder???-->
 		<a href="/stories/" class="sidenav-link"><span class="sidenav-item" name="stories"><i class="fas fa-book"></i></span></a>
 		<a href="/museum/" class="sidenav-link"><span class="sidenav-item" name="museum"><i class="fas fa-landmark"></i></span></a>
@@ -42,6 +42,7 @@
 		
 		<div class="main-content" id="main-content">
 			<body onload="javascript:drawLinks()">
+			<body onresize="javascript:drawLinks()">
 			<center>Don't see anything? Try the <a href="/stories/basichtml.html">basic html</a> version of this page. The stories are linked using Javascript for ease of modification, so enable Javscript if you can to experience the full site.</center>
 		</div>
 		
@@ -64,6 +65,7 @@
 	<script>
 	
 	function drawLinks() { 
+		var width = window.innerWidth;
 		let template = {'<>':'a','href':'${link}','Alt':'$(alt}','html':[
 			{'<>':'center','html':[
 				{'<>':'div','class':'${divclasses}','name':'${name}','html':[
@@ -71,12 +73,22 @@
 				]}
 			]}
 		]};
-		
-		let data = [
-			{"link":"splintershard","alt":"Splintershard","divclasses":"hoverpic-left orangehover","name":"Splintershard","imglink":"img/ss.jpg"},
-			{"link":"pony-me","alt":"Pony-Me™","divclasses":"hoverpic-left bluehover","name":"Pony-Me™","imglink":"img/pm.jpg"},
-			{"link":"what-if","alt":"What If...","divclasses":"hoverpic-left yellowhover","name":"What If...","imglink":"img/wi.jpg"}
-		];
+
+		let data;
+		if(width > 720) {
+			data = [
+				{"link":"splintershard","alt":"Splintershard","divclasses":"hoverpic-left orangehover","name":"Splintershard","imglink":"img/ss.jpg"},
+				{"link":"pony-me","alt":"Pony-Me™","divclasses":"hoverpic-left bluehover","name":"Pony-Me™","imglink":"img/pm.jpg"},
+				{"link":"what-if","alt":"What If...","divclasses":"hoverpic-left yellowhover","name":"What If...","imglink":"img/wi.jpg"}
+			];
+		}
+		else {
+			data = [
+				{"link":"splintershard","alt":"Splintershard","divclasses":"mobileview","name":"Splintershard","imglink":"img/ss.jpg"},
+				{"link":"pony-me","alt":"Pony-Me™","divclasses":"mobileview","name":"Pony-Me™","imglink":"img/pm.jpg"},
+				{"link":"what-if","alt":"What If...","divclasses":"mobileview","name":"What If...","imglink":"img/wi.jpg"}
+			];
+		}
 		
 		var links = json2html.render(data,template);
 		document.getElementById("main-content").innerHTML = links;

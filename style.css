@@ -5,7 +5,7 @@
 
 @media (min-width: 720px) {
 	p {
-	font-size: calc(2vh + .5vw);
+	font-size: calc(2vw + .5vw);
 	overflow-wrap: break-word;
 	margin: calc(5px + .75vw);
 	font-family: Arial, Helvetica, sans-serif;
@@ -21,7 +21,7 @@
 	}
 
 	span {
-		font-size: calc(2vh + .5vw);
+		font-size: calc(1vw + .5vw);
 		margin-top: 1vw;
 		margin-bottom: 1vw;
 	}
@@ -145,6 +145,10 @@
 		font-size: calc(10vh + .5vw);
 		white-space: nowrap;
 		text-shadow: 3px 3px grey;
+	}
+	
+	.mobileview {
+		display: none;
 	}
 	
 	/*.hoverpic-right {
@@ -321,7 +325,7 @@
 /*-----------------------------------------------------------------mobile css--------------------------------------------------------------------------*/
 @media (max-width: 720px) {
 	p {
-	font-size: calc(4vh + .5vw);
+	font-size: calc(5vw + .5vw);
 	overflow-wrap: break-word;
 	margin: calc(5px + .75vw);
 	font-family: Arial, Helvetica, sans-serif;
@@ -337,7 +341,7 @@
 	}
 
 	span {
-		font-size: calc(2vh + .5vw);
+		font-size: calc(3vw + .5vw);
 		margin-top: 1vw;
 		margin-bottom: 1vw;
 	}
@@ -394,6 +398,10 @@
 		color: white;
 		text-align: center;
 	}
+	
+	.sidenav-item:hover {
+		filter: brightness(75%);
+	}
 
 	.sidenav-link {
 		color: white;
@@ -412,6 +420,7 @@
 		justify-content: center;
 		transition: all .25s;
 		overflow: hidden;
+		display: none;
 	}
 	
 	.hoverpic-left img {
@@ -422,6 +431,35 @@
 	.hoverpic-left:hover img {
 		transform: scale(.9);
 		box-shadow: 0px 0px 8px 4px rgba(0,0,0,.5);
+	}
+	
+	.mobileview {
+		position: relative;
+		display: inline-block;
+	}
+	
+	.mobileview img {
+		width: 100%;
+		box-shadow: 0px 0px 1px 1px rgba(0,0,0,.5);
+		transition: all .25s;
+	}
+	
+	.mobileview:hover img {
+		transform: scale(.9);
+		filter: brightness(75%);
+		box-shadow: 0px 0px 8px 4px rgba(0,0,0,.5);
+	}
+	
+	.mobileview p {
+		position: absolute;
+		margin: 0 auto;
+		top: 0%;
+		text-align: center;
+		width: 100%;
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: calc(9vw + .5vw);
+		-webkit-text-stroke: 2px black;
 	}
 	
 	.container-left {
