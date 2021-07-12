@@ -147,11 +147,56 @@
 		text-shadow: 3px 3px grey;
 	}
 	
+	.hoverpic-small {
+		position: relative;
+		display: inline-block;
+		margin: 2vh;
+		width: 10vw;
+	}
+	
+	.hoverpic-small img {
+		width: 100%;
+		box-shadow: 0px 0px 1px 1px rgba(0,0,0,.5);
+		transition: all .25s;
+		box-shadow: 0px 0px 8px 4px rgba(0,0,0,.3);
+	}
+	
+	.hoverpic-small:hover img {
+		filter: brightness(75%) saturate(50%);
+		box-shadow: 0px 0px 16px 4px rgba(0,0,0,1);
+		transform: translateY(15vh);
+	}
+	
+	.hoverpic-small p {
+		width: 75%;
+		display: none;
+		position: absolute;
+		text-decoration: none;
+		color: white;
+		font-size: calc(.5vw + .5vw);
+		transition: all .25s;
+		text-align: center;
+		background: grey;
+		border: 2px;
+		border-radius: 5px;
+		padding: 2px;
+	}
+	
+	.hoverpic-small:hover p {
+		display: inline;
+		box-shadow: 0px 0px 2px 4px rgba(0,0,0,.5);
+	}
+	
+	.hoverpic-small p:hover {
+		filter: brightness(90%);
+		box-shadow: 0px 0px 8px 2px rgba(0,0,0,.5);
+	}
+
 	.hoverpic-alt {
 		position: relative;
 		display: inline-block;
-		margin-left: 12vw;
-		margin-right: 12vw;
+		margin-left: 6vw;
+		margin-right: 6vw;
 		margin-top: 2vh;
 		margin-bottom: 2vh;
 	}
@@ -350,9 +395,6 @@
 		color: black;
 	}
 	
-	
-	
-	
 }
 
 
@@ -361,8 +403,8 @@
 	p {
 	font-size: calc(5vw + .5vw);
 	overflow-wrap: break-word;
-	margin: calc(5px + .75vw);
 	font-family: Arial, Helvetica, sans-serif;
+	padding: calc(5px + .75vw);
 	}
 	
 	p.resizable {
@@ -494,6 +536,43 @@
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: calc(9vw + .5vw);
 		-webkit-text-stroke: 2px black;
+	}
+	
+	.hoverpic-small {
+		width: 75%;
+		position: relative;
+		display: inline-block;
+	}
+	
+	.hoverpic-small img {
+		width: 100%;
+		box-shadow: 0px 0px 1px 1px rgba(0,0,0,.5);
+		transition: all .25s;
+	}
+	
+	.hoverpic-small:hover img {
+		transform: scale(.9);
+		filter: brightness(75%);
+		box-shadow: 0px 0px 8px 4px rgba(0,0,0,.5);
+	}
+	
+	.hoverpic-small p {
+		position: relative;
+		text-align: center;
+		width: 100%;
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: calc(4vw + .5vw);
+		background: grey;
+		border: 2px;
+		border-radius: 5px;
+		padding: 2px;
+		transition: all .25s;
+	}
+	
+	.hoverpic-small:hover p {
+		filter: brightness(75%);
+		box-shadow: 0px 0px 8px 4px rgba(0,0,0,.5);
 	}
 	
 	.mobileview {
