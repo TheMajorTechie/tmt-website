@@ -15,17 +15,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheMajorTechie - Stories</title>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="/scripts.js"></script>
 	<script src="https://kit.fontawesome.com/a9725178ce.js" crossorigin="anonymous"></script>
     <meta name="description" content="Random content on the internet, made by your local neighborhood Tonk! Support me on Ko-fi to keep this site running!">
-    <link rel="icon" href="./favicon.png">
-	<script type="text/javascript" src="/scripts/json2html-2.1.0/json2html.js"></script>
+    <link rel="icon" href="/stories/favicon.png">
+	<script type="text/javascript" src="/json2html-2.1.0/json2html.js"></script>
   </head>
   <!-- Main site code -->
   
   <body>
 		 
 	<div class="sidenav">
-		<img src="img/zoey.png" style="width: 100%">
+		<img src="/stories/favicon.png" style="width: 100%">
 		<a href="/" class="sidenav-link"><span class="sidenav-item" name="home"><i class="fas fa-home"></i></span></a> <!--this returns to the root folder???-->
 		<a href="/stories/" class="sidenav-link"><span class="sidenav-item" name="stories"><i class="fas fa-book"></i></span></a>
 		<a href="/museum/" class="sidenav-link"><span class="sidenav-item" name="museum"><i class="fas fa-landmark"></i></span></a>
@@ -37,13 +38,15 @@
 	
 
 	<div class="pagebody">
-		<center><div class="header"><h1>Stories</h1></div></center>
-		<center><p>Fresh fics from your local serial character recycler!</p></center>
+	<center><img src="../img/fc.jpg" class="image-header"></img></center>
 		
-		<div class="main-content" id="main-content">
-			<body onload="javascript:drawLinks()">
-			<body onresize="javascript:drawLinks()">
-			<center>Don't see anything? Try the <a href="/stories/basichtml.html">basic html</a> version of this page. The stories are linked using Javascript for ease of modification, so enable Javscript if you can to experience the full site.</center>
+		<div class="main-content-text">
+			<center><h1 class="content-header">Fractures<h1></center>
+			<center><a href="https://offprint.net/work/KYEBFgGVeF/fractures" class="button-primary">Read this story on Offprint!</a></center>
+			<center><span>
+				<p>A chance encounter with an otherworldly experiment brings the very fabric of reality under threat.
+				</p></center>
+			</span>
 		</div>
 		
 		<div id="outer">
@@ -60,36 +63,28 @@
 		
 	</div>
 	
-	<!--Use json2html api to generate relevant links-->
+	<!--Use json2html api to generate relevant links
 	<script>
 	
 	function drawLinks() { 
-		var width = window.innerWidth;
-		let template = 
+		let template = {'<>':'a','href':'${link}','Alt':'$(alt}','html':[
 			{'<>':'center','html':[
-				{'<>':'a','href':'${link}','Alt':'$(name}','html':[
-					{'<>':'div','class':'hoverpic-alt','name':'${name}','html':[
-						{'<>':'img','src':'${imglink}','Alt':'${alt}'}
-					]}
+				{'<>':'div','class':'${divclasses}','name':'${name}','html':[
+					{'<>':'img','src':'${imglink}','Alt':'${alt}'}
 				]}
-			]};
-
-			data = [
-				{"link":"fractures",			"name":"Fractures",								"imglink":"img/fc.jpg"),
-				{"link":"edgelords",			"name":"Edgelords, LLC.",						"imglink":"img/el.jpg"},
-				{"link":"wielder_of_the_orb",	"name":"The Wielder of the Orb collection",		"imglink":"img/wo.jpg"},
-				{"link":"ruins",				"name":"Ruins",									"imglink":"img/rn.jpg"},
-				{"link":"splintershard",		"name":"Splintershard",							"imglink":"img/ss.jpg"},
-				{"link":"pony-me",				"name":"Pony-Me™",								"imglink":"img/pm.jpg"},
-				{"link":"what-if",				"name":"What If...",							"imglink":"img/wi.jpg"},
-				{"link":"ficlets",				"name":"Ficlets",								"imglink":"img/fl.jpg"},
-				{"link":"more",					"name":"More",									"imglink":"img/more.png"}
-			];
+			]}
+		]};
+		
+		let data = [
+			{"link":"splintershard","alt":"Splintershard","divclasses":"hoverpic-left orangehover","name":"Splintershard","imglink":"img/ss.jpg"},
+			{"link":"pony-me","alt":"Pony-Me™","divclasses":"hoverpic-left bluehover","name":"Pony-Me™","imglink":"img/pm.jpg"},
+			{"link":"what-if","alt":"What If...","divclasses":"hoverpic-left yellowhover","name":"What If...","imglink":"img/wi.jpg"}
+		];
 		
 		var links = json2html.render(data,template);
 		document.getElementById("main-content").innerHTML = links;
 	}
-	</script>
+	</script>-->
 	
 
   </body>    
